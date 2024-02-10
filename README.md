@@ -17,3 +17,14 @@ You can download model from https://drive.google.com/file/d/18Zh_zMlYttKVIGArmDY
 **Structure:**
 
 <img src="./templates/Structure.png" alt="Structure" style="zoom:50%;" />
+
+
+
+**Run:**
+
+```python
+python server.py
+```
+
+This will open a server on port 5000
+
