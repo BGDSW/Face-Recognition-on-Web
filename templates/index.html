@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload and Process</title>
+</head>
+<body>
+    <h1>Upload an Image</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <input type="submit" value="Upload">
+    </form>
+    <h2>Processed Image</h2>
+    <p>Name: {{ name }}</p>
+    <img id="processed-image" src="data:image/jpeg;base64,{{ processed_image }}" alt="Processed Image">
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Image Upload and Process</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Upload an Image</h1>-->
+<!--    <form action="/upload" method="post" enctype="multipart/form-data">-->
+<!--        <input type="file" name="file">-->
+<!--        <br>-->
+<!--        <label for="name">Name:</label>-->
+<!--        <input type="text" id="name" name="name" required>-->
+<!--        <br>-->
+<!--        <input type="submit" value="Upload">-->
+<!--    </form>-->
+<!--    <h2>Processed Image</h2>-->
+<!--    <img id="processed-image" src="data:image/jpeg;base64,{{ processed_image }}" alt="Processed Image">-->
+<!--</body>-->
+<!--</html>-->
